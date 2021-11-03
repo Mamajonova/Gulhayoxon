@@ -36,3 +36,6 @@ elif amal=="-" or amal=="ayirish":
     
 else:
     print("Xatolik boshqa amal kiriting: Masalan,+  -  *  / ")
+    
+    
+    
