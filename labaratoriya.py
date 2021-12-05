@@ -6,7 +6,7 @@ Created on Mon Nov 22 07:11:03 2021
 """
 import math
 
-
+"""
 #1         shunday boladimi
 print("(x^x)' ning hosilasi=")
 print("x^x*(ln(x)+1)")
@@ -186,7 +186,8 @@ if a+b>c and a+c>b and b+c>a and a>0 and b>0 and c>0:
     print("berilgan tomonli uchburchak bor")
 else:
     print("uchburchak yasab bolmaydi")
-
+    """
+"""
 #17 ot turgan nuqtasidan 2-nuqtaga ko'cha oladimi
 print("ot qayerda turibdi ")
 x1=int(input("x1="))
@@ -199,6 +200,99 @@ if (y1==x1+1 and y2==x2+2 or y1==x1+1 and y2==x2-2 or y1==x1-1 and y2==x2+2 or y
 else:
     print("o'ta olmaydi")
     
+#if_else shart operatori
+x=float(input("x="))
+a=(math.e**x+math.e**(-x))/2
+b=1+math.fabs(x)
+c=(1+x**2)**x
+if (a>=b and b>=c):
+    print(c,b,a)
+elif (a>=c and c>=b):
+    print(b,c,a)
+elif (b>=a and a>=c):
+    print(c,a,b)
+elif(b>=c and c>=a):
+    print(a,c,b)
+elif (c>=b and b>=a):
+    print(a,b,c)
+elif(c>=a and a>=b):
+    print(b,a,c)
+else:
+    print("boshqa son kiritib ko'ring")
 
+#2-misol
+print("a1*x+b1*y=c1")
+print("a2*x+b2*y=c2")
+a1=float(input("a1="))
+b1=float(input("b1="))
+c1=float(input("c1="))
+a2=float(input("a2="))
+b2=float(input("b2="))
+c2=float(input("c2="))
+if (a1/a2)!=(b1/b2) and (c1/c2)!=(b1/b2):
+    print("tenglamalar sistemasi ustma-ust tushadi")
+elif a1/a2!=c1/c2 and b1/b2!=c1/c2:
+    print("bitta yechimga ega")
+elif a1/a2==b1/b2 and a1/a2!=c1/c2:
+    print("yechimga ega emas")
+else:
+    print("boshqa son kiriting")
 
+#3-misol
+print("a*x**4+b*x**2+c=0")
+a=float(input("a="))
+b=float(input("b="))
+c=float(input("c="))
+D=b**2-4*a*c
+if D>0:
+    t1=(-b+math.sqrt(D))/(2*a)
+    t2=(-b-math.sqrt(D))/(2*a)
+    if t1>=0 and t2>=0:
+        x1=math.sqrt(t1)
+        x2=-math.sqrt(t1)
+        x3=math.sqrt(t2)
+        x4=-math.sqrt(t2)
+        print("ildizlari",x1,x2,x3,x4)
+    elif t1>=0 and t2<=0:
+        x1=math.sqrt(t1)
+        x2=-math.sqrt(t1)
+        print("ildizlari",x1,x2)
+    elif t1<=0 and t2>=0:
+         x3=math.sqrt(t2)
+         x4=-math.sqrt(t2)
+         print("ildizlari",x3,x4)
+    else:
+        print("ildizi yoq")
+elif D==0:
+    t1=-b/(2*a)
+    if t1>=0:
+        x1=math.sqrt(t1)
+        x2=-math.sqrt(t1)
+        print("ldizlari",x1,x2)
+    else:
+        print("ildizi yoq")
+else:
+    print("ildizi yoq")
+"""
 
+#4-misol
+
+a=float(input("a="))
+b=float(input("b="))
+c=float(input("c="))
+if a>0 and b>0 and c>0:
+    if a+b>c and a+c>b and b+c>a:
+        if a==b==c:
+            print(3,"teng tomonli uchburchak")
+        elif a==b!=c or a==c!=b or c==b!=a:
+            print(2,"teng yonli uchburchak")
+        else:
+            print(1,"ixtiyoriy uchburchak")
+    else:
+        print(0,"bunday uchburchak yasab bolmaydi")
+else:
+    print("xatolik")
+    
+#5-misol
+
+    
