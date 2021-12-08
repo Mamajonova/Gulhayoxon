@@ -4,6 +4,7 @@ Created on Mon Dec  6 15:20:23 2021
 
 @author: Premium
 """
+import math
 '''
 def toliq_ism_yasa(ism,familiya):
     toliq_ism=f"{ism} {familiya}"
@@ -116,7 +117,11 @@ def kottasini_topish(x,y,z):
 print(kottasini_topish(4.7, 3.21, -8))
 
 def aylana_hisobla(r):
-    aylana={"radius":radius,
-            "diametr":2*radius
-        }
-    
+    aylana={"radius":r,
+            "diametr":2*r,
+            "perimetr":2*r*math.pi,
+            "yuza":r*r*math.pi}
+    return aylana
+a=aylana_hisobla(5)
+print(a)
+
