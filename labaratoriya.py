@@ -274,7 +274,7 @@ elif D==0:
 else:
     print("ildizi yoq")
 """
-
+'''
 #4-misol
 
 a=float(input("a="))
@@ -292,7 +292,70 @@ if a>0 and b>0 and c>0:
         print(0,"bunday uchburchak yasab bolmaydi")
 else:
     print("xatolik")
+    '''
     
 #5-misol
+print("rux x va y nuqtada turibdi: ")
+x=int(input("x="))
+y=int(input("y="))
+print("ruh ikkinchi k va l ga o'ta oladimi")
+k=int(input("k="))
+l=int(input("l="))
+if k==x+1 and l==y+1 or  k==x+2 and l==y+2 or  k==x+3 and l==y+3 or  k==x+4 and l==y+4 or  k==x+5 and l==y+5 or  k==x+6 and l==y+6 or  k==x+7 and l==y+7 :
+    print("o'ta oladi")
+elif k==x-1 and l==y-1 or  k==x-2 and l==y-2 or  k==x-3 and l==y-3 or  k==x-4 and l==y-4 or  k==x-5 and l==y-5 or  k==x-6 and l==y-6 or  k==x-7 and l==y-7 :
+    print("o'ta oladi")
+elif k==x+1 and l==y-1 or  k==x+2 and l==y-2 or  k==x+3 and l==y-3 or  k==x+4 and l==y-4 or  k==x+5 and l==y-5 or  k==x+6 and l==y-6 or  k==x+7 and l==y-7 :
+    print("o'ta oladi")
+elif k==x-1 and l==y+1 or  k==x-2 and l==y+2 or  k==x-3 and l==y+3 or  k==x-4 and l==y+4 or  k==x-5 and l==y+5 or  k==x-6 and l==y+6 or  k==x-7 and l==y+7 :
+    print("o'ta oladi")
+else:
+    print("o'ta olmaydi")
 
+#6-misol
+print("farzin x va y nuqtada turibdi: ")
+x=int(input("x="))
+y=int(input("y="))
+print("farzin ikkinchi k va l ga o'ta oladimi")
+k=int(input("k="))
+l=int(input("l="))
+if (k==x+1 and l==y+1 or  k==x+2 and l==y+2 or  k==x+3 and l==y+3 or  k==x+4 and l==y+4 or  k==x+5 and l==y+5 or  k==x+6 and l==y+6 or  k==x+7 and l==y+7) and x>=1 and x<=8 and y>=1 and y<=8 and k>=1 and k<=8 and l>=1 and l<=8:
+    print("o'ta oladi")#bir tekisda yuqoriga harakatlansa
+elif (k==x-1 and l==y-1 or  k==x-2 and l==y-2 or  k==x-3 and l==y-3 or  k==x-4 and l==y-4 or  k==x-5 and l==y-5 or  k==x-6 and l==y-6 or  k==x-7 and l==y-7) and x>=1 and x<=8 and y>=1 and y<=8 and k>=1 and k<=8 and l>=1 and l<=8:
+    print("o'ta oladi")#bir tekisqa quyiga harakatlansa
+elif (k==x+1 and l==y-1 or  k==x+2 and l==y-2 or  k==x+3 and l==y-3 or  k==x+4 and l==y-4 or  k==x+5 and l==y-5 or  k==x+6 and l==y-6 or  k==x+7 and l==y-7) and x>=1 and x<=8 and y>=1 and y<=8 and k>=1 and k<=8 and l>=1 and l<=8:
+    print("o'ta oladi")#k tomon oshib 2- tarafi kamayib harakatlansa
+elif (k==x-1 and l==y+1 or  k==x-2 and l==y+2 or  k==x-3 and l==y+3 or  k==x-4 and l==y+4 or  k==x-5 and l==y+5 or  k==x-6 and l==y+6 or  k==x-7 and l==y+7) and x>=1 and x<=8 and y>=1 and y<=8 and k>=1 and k<=8 and l>=1 and l<=8 :
+    print("o'ta oladi")#l tomon oshib k tomon kamayib harakatlansa 
+elif (k==x and l==y+1 or  k==x and l==y+2 or  k==x and l==y+3 or  k==x and l==y+4 or  k==x and l==y+5 or  k==x and l==y+6 or  k==x and l==y+7) and x>=1 and x<=8 and y>=1 and y<=8 and k>=1 and k<=8 and l>=1 and l<=8:
+    print("o'ta oladi")# k tomon o'zgarmi l ortib harakatlansa
+elif (k==x-1 and l==y or  k==x-2 and l==y or  k==x-3 and l==y or  k==x-4 and l==y or  k==x-5 and l==y or  k==x-6 and l==y or  k==x-7 and l==y) and x>=1 and x<=8 and y>=1 and y<=8 and k>=1 and k<=8 and l>=1 and l<=8:
+    print("o'ta oladi")#l tomon o'zgarmi k tomon kamayib harakatlansa
+elif (k==x and l==y-1 or  k==x and l==y-2 or  k==x and l==y-3 or  k==x and l==y-4 or  k==x and l==y-5 or  k==x and l==y-6 or  k==x and l==y-7) and x>=1 and x<=8 and y>=1 and y<=8 and k>=1 and k<=8 and l>=1 and l<=8:
+    print("o'ta oladi")# k tomon o'zgarmi l tomon kamayib harakatlansa
+elif (k==x+1 and l==y or  k==x+2 and l==y or  k==x+3 and l==y or  k==x+4 and l==y or  k==x+5 and l==y or  k==x+6 and l==y or  k==x+7 and l==y) and x>=1 and x<=8 and y>=1 and y<=8 and k>=1 and k<=8 and l>=1 and l<=8:
+    print("o'ta oladi")# k tomon oshib l o'zgarmasa
+else:#boshqa holatlarda o'ta olmaydi
+    print("o'ta olmaydi")
     
+#8-misol uchburchak nuqtalari berilgan berilgan nuqta uchburchak ichida yotadimi
+print("uchburchak joylashgan nuqta koordinatalarini kiriting")
+x1=float(input("x1="))
+y1=float(input("y1="))
+x2=float(input("x2="))
+y2=float(input("y2="))
+x3=float(input("x3="))
+y3=float(input("y3="))
+print("M nuqta koordinatalarini kiriting u uchburchak ichida yotadimi?")
+x=float(input("x1="))
+y=float(input("x1="))
+
+
+
+a1=float(input("a1="))
+a1=float(input("a1="))
+a1=float(input("a1="))
+a1=float(input("a1="))
+
+a=input("matn kiriting:")
+print(len(a))
